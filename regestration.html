@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <style>
+        fieldset {
+          background-color: #eeeeee;
+          height:90%;
+          width:55%;
+        }
+        h3{
+            color:#bf3917;
+        }
+        legend {
+          background-color: black;
+                display: block;
+                padding-left: 10px;
+                padding-right: 10px;
+                border: 3px solid green;
+                background-color:tomato;
+                color:white;
+                size:50px;
+        }
+        
+       form {
+         margin-top: 30px;
+          margin-left: 80px;
+          size:50px;
+        }
+        body{
+            font-size:20px;
+            background-image:url("https://wallpapercave.com/wp/wp2533091.jpg");
+    
+        }
+
+
+        body[theme='dark'] fieldset
+            {
+                background-image:linear-gradient(indigo,rgb(59, 4, 79));;
+            }
+            body[theme='dark'] legend{
+                padding-bottom: 20px;
+                font-size: larger;
+                color:rgb(47, 8, 74);
+            }
+            body[theme='dark'] .t1:hover{
+                color:white;
+                background-color:#BC96E6 ;
+            }
+            body[theme='dark'] td{
+                color:white;
+            }
+            body[theme='dark']{
+                background-image:url("https://th.bing.com/th/id/OIP.8ob4KhPLdPByuxXUDuMa4wHaHa?rs=1&pid=ImgDetMain");
+                background-size:100%,100%;
+            }
+            body[theme='light'] fieldset
+            {
+                background-color:rgb(11, 59, 142);
+            }
+            body[theme='light'] legend{
+                padding-bottom: 20px;
+                font-size: larger;
+                color:rgb(255, 255, 255);
+            }
+            body[theme='light'] .t1:hover{
+                color:white;
+                background-color:#2b17bf;
+            }
+            body[theme='light'] td{
+                color:white;
+            }
+            body[theme='light']{
+                background-image:url("https://1.bp.blogspot.com/-swKkP6bVv-M/Ut_RpRJRiuI/AAAAAAAABD0/z5FRfPso6YA/s1600/ComputerDesktopWallpapersCollection760_089.jpg");
+                background-size:100%,100%;
+            }
+            body[theme='ultra-light'] fieldset
+            {
+                background-color:rgb(215, 88, 20);
+            }
+            body[theme='ultra-light'] legend{
+                padding-bottom: 20px;
+                font-size: larger;
+                color:rgb(255, 255, 255);
+            }
+            body[theme='ultra-light'] .t1:hover{
+                color:rgb(236, 229, 92);
+                background-color:#bf3917;
+            }
+            body[theme='ultra-light'] td{
+                color:white;
+            }
+            body[theme='ultra-light']{
+                background-image:url("https://th.bing.com/th/id/R.a73f5becb93389df4bb1e6563e1fa3b0?rik=t%2bqP%2fgkoT9piWg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f1%2fa%2f3%2f1519947-vertical-dark-theme-wallpaper-1920x1080-4k.jpg&ehk=Wmrx7hV9gqbaLB%2f9FxvknI6Ef%2fDOrcpy%2fbd%2bS5%2bhsP8%3d&risl=&pid=ImgRaw&r=0");
+                background-size:100%,100%;
+            }
+        </style>
+</head> 
+
+<body > <h3>Student Registration form</h3>
+    <script src="script.js"> </script>
+	<div class="main">  
+		<form action=""> 
+            <fieldset >
+                <legend bgcolor="gray"> student registration</legend>
+                <table>
+                    <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="Name" placeholder="enter your name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="Email" placeholder="enter your email address" required></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        
+                        <td><input type="radio" name="Gender"> F<input type="radio" name="Gender">M</td>
+                        
+                            
+                    </tr>
+                    <tr>
+                        <td>Language</td>
+                        <td><input type="checkbox">Hindi<input type="checkbox">english</td>
+                    </tr>
+                    <tr>
+                        <td>Religion</td>
+                        <td>
+                            <select name="Religion">
+                                <option>Hindu</option>
+                                <option>Christian</option>
+                                <option>Muslim</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>date of birth</td>
+                        <td><input type="date" name="date of birth"></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>
+                            <textarea row="5" col="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit"></td>
+                        <td><input type="reset" name="reset"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
+
+                
+
+
+
+                

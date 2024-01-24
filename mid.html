@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <style>
+            body[theme='dark']
+            {
+                padding-left: 200px;
+                background-color:#d5e1df;
+                
+                
+            }
+            body[theme='dark'] a
+            {
+                text-decoration:black;
+                color:black;
+                font-size: 140%;
+                
+            }
+            body[theme='light']
+            {
+                padding-left: 200px;
+                background-color:#b0aac0;
+                
+                
+
+            }
+            body[theme='light'] a
+            {
+                text-decoration: none;
+                color:rgb(33, 24, 135);
+                font-size: 140%;
+            }
+            body[theme='ultra-light']
+            {
+                padding-left: 200px;
+                background-color:#deeaee;
+                
+
+            }
+            body[theme='ultra-light'] a
+            {
+                text-decoration: none;
+                color:rgb(133, 12, 12);
+                font-size: 140%;
+            }
+        </style>
+    </head>
+    <body width="100%" height="30">
+        <a href="login.html" target="right">1.Login <span style="padding-left: 200px;"></a>
+        <a href="regestration.html" target="right">2.Register<span style="padding-left: 200px;"></a>
+        <a href="c.html" target="right">3.Catalog<span style="padding-left: 200px;"></a>
+        <div class="right" style="float:right">
+            <select name="theme" id="t" onchange="changeMode()">
+                <option value="dark">Theme 1</option>
+                <option value="light">Theme 2</option>
+                <option value="ultra-light">Theme 3</option>
+            </select>
+        </div>
+    </div>
+        <script> 
+            function changeMode() {
+                var selected = document.getElementById("t").value;
+                console.log(selected);
+                var frames = parent.frames;
+    
+                for (var i = 0; i < frames.length; i++) {
+                    var frameDocument = frames[i].document;
+    
+                    if (frameDocument) {
+                        var body = frameDocument.getElementsByTagName("body")[0];  
+                        body.setAttribute("theme",selected);
+                        localStorage.setItem("theme", selected);
+                    }
+                }
+            }
+        </script>
+         <script src="script.js"></script>
+    </body>
+</html>   
